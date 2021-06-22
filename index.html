@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 880px)" href="style@880.css">
     <link rel="stylesheet" media="screen and (max-width: 680px)" href="style@680.css">
     <title>Scholl Universe</title>
   </head>
   <body>
+    <div class="container">
     <nav id="main-nav">
       <div class="nav">
       <div class="logo">
@@ -19,14 +21,20 @@
         <a class="navlist-style" href="page2">Lessons</a>
         <a class="navlist-style" href="page3">Contact</a>
       </div>
+      <div class="button">
+        <button type="button" name="button" class="dark-btn">dark</button>
+      </div>
       </div>
     </nav>
     <div class="main-banner">
       <div class="main-banner-texts">
-      <h1 class="main-banner-text">Wellcome To</h1> <br><h1 class="main-banner-letter">School Universe</h1>
+      <h1 class="main-banner-text">Welcome To</h1> <br><h1 class="main-banner-letter">School Universe</h1>
       </div>
       <img src="imgs/SchoolUniverse.png" class="banner1" alt="">
       <!--- <iframe width="700" height="400" src="https://www.youtube.com/embed/Goe4ro1iK_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="s-banner">
+      <p class="s-banner-text">Sorry webside under deveopement</p>
     </div>
     <footer id="main-footer">
       <div class="footer">
@@ -55,5 +63,12 @@
       </div>
       </div>
     </footer>
+    </div>
+    <script>
+    let button = document.querySelector('.dark-btn')
+        button.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark-mode')
+        })
+    </script>
   </body>
 </html>

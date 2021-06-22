@@ -21,10 +21,10 @@ body{
 }
 .logo{
   font-size: 1em;
-  flex: 1;
+  flex: 2;
 }
 .nav-pages{
-  flex: 2;
+  flex: 4;
   display: flex;
   justify-content: space-around;
 }

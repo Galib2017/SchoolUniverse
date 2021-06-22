@@ -1,6 +1,13 @@
+.dark-mode{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
 *{
   margin: 0px;
   padding: 0px;
+}
+.container{
+  overflow: hidden;
 }
 body{
   font-family: 'Consolas', arial;
@@ -21,10 +28,10 @@ body{
 }
 .logo{
   font-size: 1em;
-  flex: 1;
+  flex: 2;
 }
 .nav-pages{
-  flex: 2;
+  flex: 4;
   display: flex;
   justify-content: space-around;
 }
@@ -37,6 +44,18 @@ body{
 }
 .navlist-style:active{
   color: blue;
+}
+.button{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.dark-btn{
+  border: none;
+  border-radius: 50%;
+  background-image: repeating-linear-gradient(45deg, #ffffff, #000000 50%);
+  width: 40px;
+  height: 40px;
 }
 .main-banner{
   width: 75%;
@@ -62,6 +81,18 @@ body{
   line-height: 60px;
   color: #e61e62;
 }
+.s-banner{
+  height: 300px;
+}
+.s-banner-text{
+  height: 100%;
+  -webkit-transform: translate(0%, 40%);
+  -ms-transform: translate(0%, 40%);
+  transform: translate(0%, 40%);
+  text-align: center;
+  font-size: 3em;
+  font-weight: 900;
+}
 #main-footer{
   height: 150px;
   background-color: hsl(220, 24%, 12%);
@@ -83,4 +114,8 @@ body{
 }
 .footerlinks-elements{
   padding: 6px;
+}
+.dark-mode{
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
 }
