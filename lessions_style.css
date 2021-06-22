@@ -1,0 +1,14 @@
+.container{
+  height: 100vh;
+}
+.sorry-banner{
+  position: absolute;
+  font-family: monospace;
+  font-size: 3em;
+  color: #c1c1c2;
+  text-align: center;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
