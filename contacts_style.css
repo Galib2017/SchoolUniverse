@@ -1,0 +1,31 @@
+.box, a{
+  height: 100vh;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+  font-weight: 900;
+  text-decoration: underline;
+  color: #c1c1c2;
+  filter: drop-shadow(0 0 90px #c1c1f2);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.absolute-sorry-banner{
+  text-align: center;
+  z-index: -1;
+  position: absolute;
+  width: 70%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 680px) {
+  .box{
+    flex-direction: column;
+  }
+  .absolute-sorry-banner{
+    top: 50%;
+  }
+}
