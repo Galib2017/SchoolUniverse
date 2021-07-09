@@ -44,12 +44,17 @@ body{
   display: flex;
   font-family: 'Calibri';
   font-size: 20px;
-  height: 450px;
+  height: 90vh;
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-height: 430px){
+  .main-banner{
+    height: 390px;
+  }
+}
 .banner1{
-  width: 300px;
+  width: 50vh;
 }
 .main-banner-text{
   font-size: 24px;
@@ -62,13 +67,18 @@ body{
   line-height: 60px;
   color: #e61e62;
 }
+.s-banner-text{
+  -webkit-transform: translate(0%, 30%);
+  -ms-transform: translate(0%, 30%);
+  transform: translate(0%, 30%);
+}
 #main-footer{
   height: 150px;
   background-color: hsl(220, 24%, 12%);
   color: #c1c1d1;
 }
 .footer{
-  width: 60%;
+  width: 70%;
   height: 100%;
   margin: auto;
   display: flex;
